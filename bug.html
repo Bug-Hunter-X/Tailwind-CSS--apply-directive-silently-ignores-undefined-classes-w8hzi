@@ -1,0 +1,7 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a class that doesn't exist.  For example:
+
+```html
+<div class="@apply non-existent-class"></div>
+```
+
+Tailwind CSS will not throw an error, but the `non-existent-class` will simply be ignored, leading to unexpected styling issues.  Debugging this can be tricky because there's no obvious error message.
