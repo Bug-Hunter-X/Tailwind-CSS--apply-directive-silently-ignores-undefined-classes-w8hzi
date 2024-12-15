@@ -1,0 +1,9 @@
+To avoid this issue, carefully review your Tailwind CSS configuration to confirm that all classes used within `@apply` directives are correctly defined.  Using a linter to check your code for undefined classes can be very helpful in catching these errors before they reach production.
+
+Here's how the corrected code looks:
+
+```html
+<div class="bg-blue-500 p-4">This works correctly.</div>
+```
+
+Make sure that `bg-blue-500` and `p-4` are defined in your `tailwind.config.js` file (or equivalent).  Consider adding a linter to your workflow to catch this type of issue early.
